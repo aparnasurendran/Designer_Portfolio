@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700|Source+Sans+Pro:200,700,900');
+
+body {
+    background-color: darkgrey;
+}
+
+// Variables
+
+
+// Fonts
+$Lora: 'Lora', serif;
+$SourceSans: 'Source Sans Pro', Helvetica, sans-serif;
+
+// Colors
+$text: #333333;
+$link: #E87345;
+
+//Imports
+@import 'reset';
+@import 'vars';
+@import 'typography';
+@import 'grid';
+
+.button {
+        color: white;
+        background: gray;
+        box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16), 0px 3px 6px 0px rgba(0,0,0,0.23);
+        padding: 1rem;
+        //padding: inherit;
+        text-align: center;
+        text-decoration: none;
+        transition: all .25s ease-in-out;
+    }
+
+.contact {
+    background: $text;
+    color: white;
+    //padding: inherit;
+    padding: 4rem;
+    display: flow-root;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    
+    //&__title, &__social, &__bottom {flex: 100%;}
+    
+    &__social {
+        margin-bottom: 2rem;
+        //margin-bottom: auto;
+    }
+    
+    &__button {
+        max-width: 18rem;
+        //max-width: inherit;
+        flex-grow: 18rem;
+    }
+}
+.portfolio {
+    padding: 4rem;
+    padding: inherit;
+    //display: flex;
+    justify-content: center;
+    //align-items: center;
+    //flex-flow: column-reverse;
+    //margin: 0 1rem;
+    //font-size: 1.5rem;
+    color: black;
+}
+
+.address {
+    background: brown;
+    color: white;
+    //padding: inherit;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column-reverse;
+    //margin: 0 1rem;
+    //font-size: 1.5rem;
+    color: black;
+    transition: all .25s ease-in-out;
+    &:hover {color: blue;}
+}
+.social {
+        display: flex;
+        justify-content: center;
+        
+        &__button {
+            //margin: auto;
+            margin: 0 1rem;
+            
+            font-size: 1.5rem;
+            color: white;
+            transition: all .25s ease-in-out;
+            
+            &:hover {color: $link;}
+        }
+    }
